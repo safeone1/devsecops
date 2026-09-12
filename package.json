@@ -1,0 +1,22 @@
+{
+  "name": "devsecops",
+  "type": "module",
+  "private": true,
+
+  "scripts": {
+    "build" : "bun build ./src/main.ts --outdir ./dist --target node",
+    "test" : "vitest run",
+    "test:watch" : "vitest",
+    "dev" : "bun run src/main.ts",
+    "start" : "node dist/main.js",
+    "lint" : "eslint ./src"
+  },
+
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vitest": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
